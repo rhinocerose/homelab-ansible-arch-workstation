@@ -7,6 +7,11 @@
   pacman: name=firefox state=present
   tags:
     - firefox
+    
+- name: Install qutebrowser
+  pacman: name=qutebrowser state=present
+  tags:
+    - qutebrowser
 
 - name: Firejail entry for firefox
   file: src=/usr/bin/firejail
@@ -48,16 +53,4 @@
     - firefox
     - firejail
 
-- name: Install tor-browser-en
-  aur: name=tor-browser-en user={{ user.name }} skip_pgp=yes
-  tags:
-    - tor-browser
-    - aur
 
-- name: Jail tor-browser-en
-  file: src=/usr/bin/firejail
-        dest=/usr/local/bin/tor-browser-en
-        state=link
-  tags:
-    - tor-browser
-    - firejail
