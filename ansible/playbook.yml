@@ -21,9 +21,7 @@
     - { role: mail, tags : ['mail'] }
     - { role: firejail, tags: ['firejail'] }
     - { role: windowmanager, tags: ['windowmanager'] }
-    - { role: redshift, tags: ['redshift'] }
     - { role: keepass, tags: ['keepass'] }
-    - { role: nextcloud, tags: ['nextcloud'] }
     - { role: macspoof, tags: ['macspoof'], when: "system.macspoof == 'enabled'"}
     - { role: sound, tags : ['sound'] }
     - { role: mail, tags : ['mail'] }
