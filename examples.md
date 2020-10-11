@@ -1,4 +1,5 @@
 ## enable multiple items
+```ansible
 - name: install termite terminal emulator
   pacman:
     name: "{{ item }}"
@@ -10,3 +11,4 @@
   with_items:
     - termite
     - termite-terminfo
+```
