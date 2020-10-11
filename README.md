@@ -8,12 +8,11 @@ will only get installed if the `dotfiles` variable is defined.
 ## System overview
 * Full disk encryption
 * LVM on LUKS partitioning scheme
-* Plymouth support for a nice boot screen
 
 ## Special configuration
 * Customized i3 window manager with
 [i3status-rs](https://github.com/greshake/i3status-rust) bar
-* z-shell with automatic oh-my-zsh integration
+* fish-shell with automatic oh-my-fish integration
 * `rxvt-unicode` and `kitty` true color terminals
 * `tmux` with vim bindings
 
