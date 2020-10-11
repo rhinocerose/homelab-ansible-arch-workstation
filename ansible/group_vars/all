@@ -19,8 +19,8 @@ user:
 #                    if you wan't proprietary drivers follow the steps documented in the arch wiki.
 ##
 system:
-    locale: de_CH.UTF-8
-    timezone: Europe/Zurich
+    locale: en_US.UTF-8
+    timezone: Canada/Toronto
     processor: amd
     graphics_card: nvidia
     macspoof: disabled
@@ -30,7 +30,7 @@ system:
 # ========================
 # syslinux and grub are supported
 ##
-bootloader: syslinux
+bootloader: grub
 
 ##
 # Connectivity configuration
@@ -48,7 +48,7 @@ ssh:
 ##
 dotfiles:
     installation: "true"
-    url: https://github.com/id101010/dotfiles.git
+    url: https://github.com/rhinocerose/.dotfiles.git
     destination: .dotfiles
     rcup_flags: -fx README.md
 
