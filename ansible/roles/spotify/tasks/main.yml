@@ -1,11 +1,11 @@
 ---
 
-- name: Install spotify from aur
-  aur: name=spotify user={{ user.name }}
+- name: Install tizonia from aur
+  aur: name=tizonia-all user={{ user.name }}
 
 - name: Jail spotify
   file: src=/usr/bin/firejail
-        dest=/usr/local/bin/spotify
+        dest=/usr/local/bin/tizonia
         state=link
   tags:
     - firejail
