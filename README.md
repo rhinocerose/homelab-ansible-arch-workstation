@@ -54,27 +54,3 @@ $ ansible-playbook -i inventory/localhost playbook.yml [--tags $LIMIT_TO_TAG]
 ``` 
 
 Lean back and watch the installation.
-
-## Testing and development (local vagrant machine) 
-
-Warning, this is kind of buggy. Vagrant looks quite abandoned. Hashicorp does not react to issues.
-I might remove this section soon. 
-
-Assuming you've already installed vagrant you can set up a vritual machine with
-just these steps
-
-``` bash 
-$ git clone --recurse-submodules -j8 https://github.com/id101010/ansible-archlinux.git 
-$ cd ansible-archlinux/vagrant
-$ vagrant up --provision 
-```
-
-Now reboot the machine and start a graphical session using virtualbox. The
-default credentials are `user:vagrant pw:vagrant`.  Alternativly you can log
-into your machine using the command `vagrant ssh`.
-
-Hint: To reload the configuration into the vagrant box you can eighter reload
-(issues a graceful shutdown) the machine using `vagrant reload` or you can
-update and apply the configuration changes using `vagrant rsync && vagrant
-provision`.  This way you don't need to wait for the machine to boot when
-testing changes.
