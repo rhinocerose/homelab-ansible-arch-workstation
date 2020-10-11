@@ -3,9 +3,9 @@
 # ==================
 ##
 user:
-    name: aaron
+    name: arch
     group: users
-    shell: /bin/zsh
+    shell: /usr/bin/fish
 
 ##
 # System configuration
