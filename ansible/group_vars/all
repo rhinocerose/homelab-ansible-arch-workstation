@@ -60,7 +60,6 @@ base_packages:
     - base-devel
     - cronie
     - openssh
-    - rkhunter
     - zsh
     - htop
     - nmap
