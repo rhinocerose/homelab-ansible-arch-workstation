@@ -20,7 +20,7 @@ user:
 ##
 system:
     locale: en_US.UTF-8
-    timezone: Canada/Toronto
+    timezone: Canada/Eastern
     processor: amd
     graphics_card: nvidia
     macspoof: disabled
