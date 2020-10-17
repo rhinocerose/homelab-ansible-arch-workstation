@@ -1,4 +1,6 @@
 ---
 
 - name: install vim
-  pacman: name=vim state=present
+  pacman: 
+    name: vim 
+    state: present
