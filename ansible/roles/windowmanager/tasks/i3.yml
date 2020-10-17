@@ -10,7 +10,6 @@
       - i3status-rs
       - dmenu
       - feh
-      - dunst
       - rofi
       - compton
     state: present
