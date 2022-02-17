@@ -7,11 +7,7 @@
   pacman: name=firefox state=present
   tags:
     - firefox
-    
-- name: Install qutebrowser
-  pacman: name=qutebrowser state=present
-  tags:
-    - qutebrowser
+
 
 - name: Firejail entry for firefox
   file: src=/usr/bin/firejail
