@@ -1,3 +1,6 @@
 ---
 
-- import_tasks: vim_editor.yml
+- name: install vim
+  pacman: 
+    name: vim 
+    state: present
