@@ -5,7 +5,7 @@
 user:
     name: arch
     group: users
-    shell: /usr/bin/fish
+    shell: fish
 
 ##
 # System configuration
@@ -58,19 +58,17 @@ dotfiles:
 ##
 base_packages:
     - base-devel
-    - cronie
-    - openssh
-    - zsh
-    - htop
-    - nmap
-    - curl
-    - tmux
-    - git
-    - rsync
-    - coreutils
-    - dateutils
     - bc
+    - coreutils
+    - cronie
+    - curl
+    - dateutils
+    - git
+    - htop
+    - make
+    - openssh
+    - rsync
     - strace
-    - lsof
     - sysstat
     - tig
+    - xcape
