@@ -1,5 +1,15 @@
 ---
 
+
+- name: install fish shell
+  pacman:
+    name: fish
+    state: present
+  register: task_result
+  until: task_result is success
+  retries: 10
+  delay: 2
+  
 - name: Install oh-my-zsh-git and optional dependencies from AUR
   aur: name={{ item }} user={{ user.name }}
   with_items:
