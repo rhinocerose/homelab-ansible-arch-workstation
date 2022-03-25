@@ -72,3 +72,4 @@ base_packages:
     - sysstat
     - tig
     - xcape
+    - xdg-utils
